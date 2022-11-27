@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E49A23B2932B13D001F3C26 /* FizzbuzzEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49A23A2932B13D001F3C26 /* FizzbuzzEntity.swift */; };
+		1E49A2402932B318001F3C26 /* FizzbuzzStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49A23F2932B318001F3C26 /* FizzbuzzStorage.swift */; };
+		1E49A2422932B932001F3C26 /* FizzbuzzRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49A2412932B932001F3C26 /* FizzbuzzRepository.swift */; };
+		1E49A2452932BAD2001F3C26 /* GetFizzbuzzEntityUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49A2442932BAD2001F3C26 /* GetFizzbuzzEntityUseCase.swift */; };
+		1E49A2472932BD49001F3C26 /* SaveFizzbuzzEntityUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49A2462932BD49001F3C26 /* SaveFizzbuzzEntityUseCase.swift */; };
+		1E49A2492932BD84001F3C26 /* GetFizzbuzzStringUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49A2482932BD84001F3C26 /* GetFizzbuzzStringUseCase.swift */; };
+		1E49A24C2932C3E9001F3C26 /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49A24B2932C3E9001F3C26 /* UseCaseFactory.swift */; };
+		1E49A24F2932CC96001F3C26 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49A24E2932CC96001F3C26 /* FormView.swift */; };
+		1E49A2512932D439001F3C26 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49A2502932D439001F3C26 /* FormViewModel.swift */; };
 		1E7B344729325181000A6645 /* FizzbuzzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7B344629325181000A6645 /* FizzbuzzApp.swift */; };
 		1E7B344929325181000A6645 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7B344829325181000A6645 /* ContentView.swift */; };
 		1E7B344B29325187000A6645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E7B344A29325187000A6645 /* Assets.xcassets */; };
@@ -34,6 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E49A23A2932B13D001F3C26 /* FizzbuzzEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzbuzzEntity.swift; sourceTree = "<group>"; };
+		1E49A23F2932B318001F3C26 /* FizzbuzzStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzbuzzStorage.swift; sourceTree = "<group>"; };
+		1E49A2412932B932001F3C26 /* FizzbuzzRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzbuzzRepository.swift; sourceTree = "<group>"; };
+		1E49A2442932BAD2001F3C26 /* GetFizzbuzzEntityUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFizzbuzzEntityUseCase.swift; sourceTree = "<group>"; };
+		1E49A2462932BD49001F3C26 /* SaveFizzbuzzEntityUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveFizzbuzzEntityUseCase.swift; sourceTree = "<group>"; };
+		1E49A2482932BD84001F3C26 /* GetFizzbuzzStringUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFizzbuzzStringUseCase.swift; sourceTree = "<group>"; };
+		1E49A24B2932C3E9001F3C26 /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
+		1E49A24E2932CC96001F3C26 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		1E49A2502932D439001F3C26 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
 		1E7B344329325181000A6645 /* Fizzbuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fizzbuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E7B344629325181000A6645 /* FizzbuzzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzbuzzApp.swift; sourceTree = "<group>"; };
 		1E7B344829325181000A6645 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +89,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E49A2382932B08D001F3C26 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1E49A24A2932C3C3001F3C26 /* Di */,
+				1E49A2432932BA91001F3C26 /* Domain */,
+				1E49A23C2932B2B8001F3C26 /* Data */,
+				1E49A2392932B096001F3C26 /* Entities */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1E49A2392932B096001F3C26 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				1E49A23A2932B13D001F3C26 /* FizzbuzzEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		1E49A23C2932B2B8001F3C26 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1E49A23E2932B303001F3C26 /* Storage */,
+				1E49A23D2932B2CE001F3C26 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1E49A23D2932B2CE001F3C26 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				1E49A2412932B932001F3C26 /* FizzbuzzRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		1E49A23E2932B303001F3C26 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				1E49A23F2932B318001F3C26 /* FizzbuzzStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		1E49A2432932BA91001F3C26 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1E49A2442932BAD2001F3C26 /* GetFizzbuzzEntityUseCase.swift */,
+				1E49A2462932BD49001F3C26 /* SaveFizzbuzzEntityUseCase.swift */,
+				1E49A2482932BD84001F3C26 /* GetFizzbuzzStringUseCase.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		1E49A24A2932C3C3001F3C26 /* Di */ = {
+			isa = PBXGroup;
+			children = (
+				1E49A24B2932C3E9001F3C26 /* UseCaseFactory.swift */,
+			);
+			path = Di;
+			sourceTree = "<group>";
+		};
+		1E49A24D2932CC79001F3C26 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1E49A24E2932CC96001F3C26 /* FormView.swift */,
+				1E49A2502932D439001F3C26 /* FormViewModel.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		1E7B343A29325181000A6645 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +183,8 @@
 		1E7B344529325181000A6645 /* Fizzbuzz */ = {
 			isa = PBXGroup;
 			children = (
+				1E49A24D2932CC79001F3C26 /* UI */,
+				1E49A2382932B08D001F3C26 /* Core */,
 				1E7B344629325181000A6645 /* FizzbuzzApp.swift */,
 				1E7B344829325181000A6645 /* ContentView.swift */,
 				1E7B344A29325187000A6645 /* Assets.xcassets */,
@@ -258,7 +349,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E7B344929325181000A6645 /* ContentView.swift in Sources */,
+				1E49A2452932BAD2001F3C26 /* GetFizzbuzzEntityUseCase.swift in Sources */,
+				1E49A24F2932CC96001F3C26 /* FormView.swift in Sources */,
+				1E49A2472932BD49001F3C26 /* SaveFizzbuzzEntityUseCase.swift in Sources */,
+				1E49A2422932B932001F3C26 /* FizzbuzzRepository.swift in Sources */,
+				1E49A23B2932B13D001F3C26 /* FizzbuzzEntity.swift in Sources */,
 				1E7B344729325181000A6645 /* FizzbuzzApp.swift in Sources */,
+				1E49A2512932D439001F3C26 /* FormViewModel.swift in Sources */,
+				1E49A2402932B318001F3C26 /* FizzbuzzStorage.swift in Sources */,
+				1E49A24C2932C3E9001F3C26 /* UseCaseFactory.swift in Sources */,
+				1E49A2492932BD84001F3C26 /* GetFizzbuzzStringUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

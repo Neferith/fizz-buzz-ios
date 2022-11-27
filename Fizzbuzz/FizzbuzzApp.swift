@@ -11,7 +11,7 @@ import SwiftUI
 struct FizzbuzzApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FormView()
         }
     }
 }
